@@ -5,9 +5,17 @@
 // va applicato uno sconto del 40% per gli over 65.
 // L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). 
 
-let kmDaPerc = prompt('Quanti chilometri vuoi percorrere?');
+let kmDaPerc = parseInt(prompt('Quanti chilometri vuoi percorrere?'));
 
-let etaPass = prompt('Quanti anni ha il passeggero?');
+if(isNaN(kmDaPerc)){
+  alert("inserire un numero per i km")
+}
+
+let etaPass = parseInt(prompt('Quanti anni ha il passeggero?'));
+
+if(isNaN(etaPass)){
+  alert("inserire un numero per l'età")
+}
 
 console.log("kilometri: " + kmDaPerc + " età: " + etaPass);
 
